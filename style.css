@@ -396,16 +396,16 @@ h2 {
 
 }
 
+.photo {
+    box-shadow: 5px 5px #EC3332;
+}
+
 p + .photo {
     margin-top: 140px;
 }
 
 .photo + h2 {
     margin-top: 60px;
-}
-
-.location {
-    margin-bottom: 60px;
 }
 
 .pin  {
@@ -622,6 +622,10 @@ select[class = 'choice'] {
 
 .ulabel.choice, .ulabel.choice.active {
     padding-right: 60px;
+}
+
+.selects {
+    padding-bottom: 80px;
 }
 
 .ulabel.choice:before,  .ulabel.choice.active:before {
@@ -863,7 +867,7 @@ select.error {
     display: grid;
     gap: 60px 3%;
     grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
-    margin-left: 250px;
+    margin-left: 25%;
     margin-bottom: 100px;
     margin-right: 2%;
 }
