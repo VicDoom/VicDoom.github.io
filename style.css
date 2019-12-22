@@ -145,7 +145,7 @@ section .inv {
 
 .white {
     padding-top: 130px;
-    margin: 0 7% 0px 25%;
+    margin: 0 15% 0px 15%;
     position: relative;
 }
 
@@ -302,12 +302,12 @@ section marquee span {
 }
 
 .slider-next {
-    right: 200%;
+    right: 150%;
     top: 0;
 }
 
 .slider-prev {
-    right: 250%;
+    right: 200%;
     top: 0;
 }
 
@@ -670,7 +670,7 @@ select[class = 'choice'] {
 }
 
 .oneOfSpeakers {
-    margin-right: 70px;
+    margin-right: 5%;
     margin-bottom: 30px;
 }
 
@@ -685,6 +685,10 @@ select[class = 'choice'] {
     font-family: Open Sans;
     font-weight: normal;
     font-style: italic;
+}
+
+.white.speakerWrap {
+    margin-right: 2%;
 }
 
 input, textarea {
@@ -867,7 +871,7 @@ select.error {
     display: grid;
     gap: 60px 3%;
     grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
-    margin-left: 25%;
+    margin-left: 15%;
     margin-bottom: 100px;
     margin-right: 2%;
 }

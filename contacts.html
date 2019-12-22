@@ -88,13 +88,14 @@
         </section>
         
 
-        <section class="form">
-            <h1>Записаться 
-                на RDCLR.HOME</h1>
-            <form action="">
-    
+        <section class = 'form'>
+            <h1>Записаться на RDCLR.HOME</h1>
+            <div class="message-text"></div>
+            <form action="" id = "frm" data-required = 'true'>
+        
                 <label class = "ulabel">
                     <select>
+                        <option value="">Выберите профессию</option>
                         <option value="">Студент</option>
                         <option value="">Начинающий дизайнер</option>
                         <option value="">Практикующий дизайнер</option>
@@ -108,11 +109,13 @@
         
                 <input type='checkbox' id = 'checkbox-id'>
                 <label class="check" for = 'checkbox-id'>Даю согласие на обработку своих <a href = '#'>персональных данных</a></label>
+                <!-- <span class='check-text'></span> -->
         
                 <input type="submit" value = 'ОТПРАВИТЬ'>
         
               </form>
-              <img src="Group 11.png" alt="наверх" class = 'up'>
+        
+            <img src="Group 11.png" alt="наверх" class = 'up'>
         </section>
         
     </main>
@@ -130,6 +133,26 @@
             <a href="">контакты</a>
         </nav>
     </footer>
+
+    <div class="popup">
+        <div class="overlay">
+
+        </div>
+
+        <div class="popup-inner success">
+        <img src="close.png" alt="закрыть" class = 'close'>
+            <h1>Поздравляем!</h1>
+            <span>Вы записались 
+                на RDCLR.HOME</span>
+        </div>
+        
+        <div class="popup-inner fail">
+        <img src="close.png" alt="закрыть" class = 'close'>
+            <h1>Ошибка!</h1>
+            <span>Проверьте корректность вводимых данных</span>
+        </div>
+
+    </div>
 
     <script src = 'script.js'></script>
 
