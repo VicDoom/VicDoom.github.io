@@ -408,6 +408,61 @@ p + .photo {
     margin-top: 60px;
 }
 
+.showreel {
+    display: block;
+    width: 90%;
+    height: 100%;
+    margin: 0 5% 0 5%;
+    position: relative;
+    padding-top: 210px;
+    padding-bottom: 40px;
+}
+
+.showreel-wrapper {
+    max-height: 100%;
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+}
+
+.showreel .player {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.showreel a {
+    width: 100px;
+}
+
+.showreel h2 {
+    color: white;
+    display: inline-block;
+    line-height: 100%;
+    margin-right: 2%;
+    /* height: 100%; */
+}
+
+.showreel .play {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    
+}
+
 .pin  {
     display: none;
 }
@@ -1091,6 +1146,26 @@ h2 + .photo {
 
         text-align: center;
         letter-spacing: 0.02em;
+    }
+
+    .showreel {
+        width: 90%;
+        /* margin: 80px 5% 55px 5%; */
+        padding-top: 80px;
+        padding-bottom: 55px;
+    }
+
+    .player {
+        margin: 0 10%;
+    }
+
+    .showreel h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .showreel a {
+        width: 40px;
     }
 
     section[class = 'RDCLRHOME'] {

@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function handleScroll() {
         
         scrolledNow = window.scrollY;
-        if (scrolledNow > 50) {
+        if (scrolledNow > 20) {
             header.style.backgroundColor = 'transparent';
             if (scrolledNow - scrolled > 0) {
                 scrolledInterval = 0;
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         } else {
-            if (title.innerHTML == 'Main')
+            if (title.innerHTML == 'RDCLRHOME')
                 header.style.backgroundColor = '#EC3332';
             else 
                 header.style.backgroundColor = 'transparent';
@@ -278,11 +278,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     arrowDown.addEventListener('click', function() {
 
-        let height = (sections[0].offsetHeight 
-            + sections[1].offsetHeight 
-            + sections[2].offsetHeight
-            // + header.offsetHeight
-            );
+        let height = 0;
+        for (let i = 0; i < 5; i++) {
+            height += sections[i].offsetHeight;
+        }
+        
         if (window.innerWidth < 768) {
             height += header.offsetHeight;
         }
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let request = document.querySelector('.request')
     request.addEventListener('click', function() {
         let height = 0;
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 7; i++) {
             height += sections[i].offsetHeight;
         }
         if (window.innerWidth < 768) {
