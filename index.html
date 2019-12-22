@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Homework1</title>
+</head>
+<body>
+
+    <header>
+        <img src="Frame.png" alt="лого" class = "logo">
+        <nav class = 'links'>
+            <a href="index.html">о нас</a>
+            <a href="merch.html">мерч</a>
+            <a href="contacts.html">контакты</a>
+        </nav>
+        <img src="hum.png" alt="close" class = 'but'>
+    </header>
+
+    <main>
+
+    <section class = 'white'>
+        <a href="main.html"><img src="Group 17.png" alt="arrow" class = "arrow"></a>
+        <h1 class = "about_us">О нас</h1>
+        <p>Серия офлайн-мероприятий от Red Collar — короткие лекции 
+            и живые обсуждения прямо у нас в офисе. Минимум гостей, неформальная обстановка. Ждём дома!</p>
+        
+        <h2>Как к нам попасть?</h2>
+        <p>Всё просто — будь в числе первых, кто запишется на встречу после анонса даты. Количество мест объявляем вместе с анонсом.
+        </p>
+    
+        <h3>Где с нами пообщаться?</h3>
+        <p>Чат в телеграме, в котором общаемся, отвечаем на вопросы, публикуем анонсы мероприятий 
+            в первую очередь <a href="ttttt.me/rdclr_home">ttttt.me/rdclr_home</a></p>
+    
+        <!-- <img src="Vector.png" alt="">     -->
+            <blockquote>
+                <img src="Group.png" alt="quotes" class = "quotes">
+                <p>Разберём все по полочкам</p>
+            </blockquote>
+        
+        <h2>Наша команда</h2>
+        <p>Обладаем обширными компетенциями и экспертными 
+                навыками в таких сферах как: </p>
+        <ol>
+            <li>Менеджмент</li>
+            <li>Дизайн</li>
+            <li>Frontend</li>
+            <li>Backend</li>
+        </ol>
+        <p>Узнаем что актуально прямо сейчас, какие направления развиваются, 
+            как самому начать изучать сферу, наработать нужные навыки и войти в профессию.</p>
+    </section>
+   
+    <section class = 'white'>
+        <h2>Фотоотчет</h2>
+
+        <div class="slider">
+            <div class = "counter">
+                <span>1</span>/3
+            </div>
+            <div class="slider-hidden">
+
+                <div class="slider-wrapper">
+                    <!-- <img src="" alt="пикча со сходки3" class = "photo slide" style="background-color: blue;"> -->
+                    <img src="tJgWUyDqfg4 1.png" alt="пикча со сходки1" class = "photo slide active">
+                    <img src="" alt="пикча со сходки2" class = "photo slide" style = "background: red;">
+                    <img src="" alt="пикча со сходки3" class = "photo slide" style="background-color: blue;">
+                    <!-- <img src="tJgWUyDqfg4 1.png" alt="пикча со сходки1" class = "photo slide active"> -->
+                </div>
+                
+            </div> 
+            <div class="slider-buttons">
+                <img src="left_arrow.png" alt="левая стрелка" class = "leftArrow slider-prev">
+                <img src="right_arrow.png" alt="правая стрелка" class = "rightArrow slider-next">
+            </div>
+        </div>
+    </section>
+    
+    <section class = 'white'>
+        <h2>Последние спикеры</h2>
+        <p>Имено они читают лекции на RDCLR.HOME! А если не читают, 
+                то находятся где-то в офисе и им можно задать любые вопросы.</p>
+        <ul>
+            <li><span>Иван Марков</span></li>
+            <li><span>Иван Вялов</span></li>
+            <li><span>Надежда Кочеткова</span></li>
+            <li><span>Артём Фёдоров</span></li>
+            <li><span>Андрей Глевчук</span></li>
+        </ul>
+
+        <h2 class = 'location'>Мы находимся</h2>
+        <img src="dPDWBhH7bgk 1.png" alt="пикча логотип" class = "photo">
+        <img src="pin.png" alt="значок" class = "pin">
+        <p class = 'address'>ул. Текстильщиков, 5б, Воронеж</p>
+    </section>
+    
+    <section class="form">
+        <div class = 'message-text'></div>
+
+        <h1>Записаться на RDCLR.HOME</h1>
+        <div class="message-text"></div>
+        <form action="" id = "frm" data-required = 'true'>
+    
+            <label class = "ulabel">
+                <select>
+                    <option value="">Выберите профессию</option>
+                    <option value="">Студент</option>
+                    <option value="">Начинающий дизайнер</option>
+                    <option value="">Практикующий дизайнер</option>
+                    <option value="">Хочу освоить другую профессию</option>
+                </select>
+            </label>
+    
+            <input type="email" placeholder="E-mail">
+            <input type="text" placeholder="Телефон">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+    
+            <input type='checkbox' id = 'checkbox-id'>
+            <label class="check" for = 'checkbox-id'>Даю согласие на обработку своих <a href = '#'>персональных данных</a></label>
+            <!-- <span class='check-text'></span> -->
+    
+            <input type="submit" value = 'ОТПРАВИТЬ'>
+    
+          </form>
+    </section>
+
+    </main>
+
+    <footer>
+        <nav class = 'feedback'>
+            <a href="#">VK</a>
+            <a href="#">FB</a>
+            <a href="#">IG</a>
+        </nav>
+
+        <nav class = 'links'>
+            <a href="">о нас</a>
+            <a href="">мерч</a>
+            <a href="">контакты</a>
+        </nav>
+    </footer>
+
+    <div class="popup">
+        <div class="overlay">
+
+        </div>
+
+        <div class="popup-inner success">
+        <img src="close.png" alt="закрыть" class = 'close'>
+            <h1>Поздравляем!</h1>
+            <span>Вы записались 
+                на RDCLR.HOME</span>
+        </div>
+        
+        <div class="popup-inner fail">
+        <img src="close.png" alt="закрыть" class = 'close'>
+            <h1>Ошибка!</h1>
+            <span>Проверьте корректность вводимых данных</span>
+        </div>
+
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
