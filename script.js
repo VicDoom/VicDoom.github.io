@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 scrolledInterval += scrolled - scrolledNow;
                 // console.log(34343434);
-                if (scrolledInterval > 100 && hidden) {
+                if (scrolledInterval > 50 && hidden) {
                     hidden = false;
                     header.classList.remove('hidden');
                 }
