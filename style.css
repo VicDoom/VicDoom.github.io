@@ -18,6 +18,8 @@ header {
     /* left: 0; */
     background: transparent;
     z-index: 1;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 header nav {
@@ -28,14 +30,15 @@ header nav {
 }
 
 header.hidden {
-    display: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 
-header .logo {
+/* header .logo {
     width: 75px;
     height: 25px;
-}
+} */
 
 .but {
     display: none;
@@ -43,10 +46,6 @@ header .logo {
 
 .activeFromHum {
     display: none;
-}
-
-header[class = 'red'] {
-    background-color: #EC3332;
 }
 
 main {
@@ -196,7 +195,7 @@ h1 + .talks {
     position: fixed;
     height: 52px;
     width: 69px;
-    top: 15%;
+    top: 23%;
     left: 6%;
     transition: transform 0.2s;
 }
@@ -314,6 +313,10 @@ section marquee span {
 h1, h2, h3, a {
     color: #EC3332;
     letter-spacing: 0.02em;
+}
+
+a.black {
+    color: black;
 }
 
 h1 {
@@ -645,10 +648,11 @@ li span {
 }
 
 select {
-    border: 1px solid black;
+    border: 2px solid #000000;
     background: transparent;
     height: 70px;
     padding-left: 20px;
+    padding-right: 30px;
     font-size: 20px;
     appearance: none;
     -webkit-appearance: none;
@@ -684,17 +688,17 @@ select[class = 'choice'] {
 }
 
 .ulabel.choice:before,  .ulabel.choice.active:before {
-    left: 60%;
+    /* left: 60%; */
 }  
 
 .ulabel:before, .ulabel.active:before {
     content: '';
     position: absolute;
     top: 4px;
-    left: 90%;
+    right: 30px;
     display: block;
     width: 10px;
-    height: 10px;
+    height: 12px;
 
     background-image: url(Vector\ 11.png);
     background-repeat: no-repeat;
@@ -755,7 +759,7 @@ input, textarea {
     height: 70px;
     display: block;
     /* border-radius: 0; */
-    border: solid 1px black;
+    border: 2px solid #000000;
 }
 
 textarea {
@@ -769,7 +773,7 @@ input[type='checkbox'] {
 }
 
 .check {
-    color: #000;
+    color: #A8A8A8;
     cursor: default;
     font-weight: normal;
     line-height: 30px;
@@ -784,8 +788,8 @@ input[type='checkbox'] {
     width: 30px;
     height: 30px;
     background: rgb(255, 255, 255);
-    border: 1px solid #e3e3e3;
-    margin-right: 15px;
+    border: 2px solid #000000;
+    margin-right: 30px;
     text-align: center;
     vertical-align: middle;
 }
@@ -801,7 +805,7 @@ input[type = 'submit'] {
     letter-spacing: 0.12em;
     background: #EC3332;
     box-shadow: 5px 5px black;
-    margin-bottom: 120px;
+    margin-bottom: 110px;
 }
 
 .up {
@@ -838,6 +842,8 @@ footer {
 
 footer .feedback a {
     margin-right: 45px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
@@ -925,10 +931,14 @@ select.error {
 .catalog {
     display: grid;
     gap: 60px 3%;
-    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     margin-left: 15%;
     margin-bottom: 100px;
     margin-right: 2%;
+}
+
+.catalog img {
+    width: 100%;
 }
 
 .catalog.active {
@@ -1054,16 +1064,20 @@ h2 + .photo {
         max-width: 100%;
     }
 
+    .smallh1 {
+        font-size: 20px;
+    }
+
     .activeFromHum {
         display: none;
     }
 
     header {
-        max-width: 100%;
+        /* max-width: 100%; */
         padding: 30px 20px;
 
-        position: static;
-        width: inherit;
+        /* position: static;
+        width: inherit; */
     }
 
     header nav {
@@ -1074,6 +1088,7 @@ h2 + .photo {
         display: block;
         position: relative;
         top: -5px;
+        right: 35px;
         z-index: 2;
         width: 25px;
         height: 25px;
@@ -1168,7 +1183,7 @@ h2 + .photo {
     }
 
     section[class = 'RDCLRHOME'] {
-        padding: 80px 20px; 
+        padding: 160px 20px 80px 20px; 
     }
 
     .HOME, .underHOME, .RDCLR, .underRDCLR {
@@ -1440,6 +1455,7 @@ h2 + .photo {
         max-width: 100%;
         height: 55px;
         font-size: 14px;
+        padding-left: 12px;
     }
 
     select option {
@@ -1456,8 +1472,21 @@ h2 + .photo {
     }
     
     .ulabel.choice:before,  .ulabel.choice.active:before {
-        left: 70%;
+        background: url(Vector\ 13.png) no-repeat;
+        background-size: 15px 7px;
+        width: 15px;
+        height: 7px;
+        right: 15px;
     } 
+
+    .ulabel:before, .ulabel.active:before {
+        top: 8px;
+        background: url(Vector\ 13.png) no-repeat;
+        background-size: 15px 7px;
+        width: 15px;
+        height: 7px;
+        right: 20px;
+    }
 
     textarea {
         height: 280px; 
@@ -1505,8 +1534,8 @@ h2 + .photo {
     footer .feedback a, footer .links a {
         margin: 0;
     }
-    footer .feedback {
 
+    footer .feedback {
         font-size: 18px;
         font-weight: bold;
         margin: 25px 25% 25px 25%;
@@ -1638,4 +1667,19 @@ h2 + .photo {
         color: black;
     }
     
+}
+
+@media (max-width: 350px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .RDCLR, .HOME, .underHOME, .underRDCLR {
+        font-size: 50px;
+    }
 }
